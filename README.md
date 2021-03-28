@@ -11,17 +11,17 @@ This project provides a simple Maven archetype for generating a Jakarta EE 9 pro
 
 Follow the steps to build this project firstly.
 
-Checkout the source codes.
+1. Checkout the source codes.
 
-```bash
-git clone https://github.com/hantsy/maven-archetype-jakartaee9
-```
+   ```bash
+   git clone https://github.com/hantsy/maven-archetype-jakartaee9
+   ```
+   
+2. Then build the project.
 
-Then build the project.
-
-```bash
-mvn clean install
-```
+   ```bash
+   mvn clean install
+   ```
 
 ## Generate a Jakarta EE 9 project
 
