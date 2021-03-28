@@ -8,7 +8,8 @@ This project provides a simple Maven archetype for generating a Jakarta EE 9 pro
 * Apache Maven 3.6
 
 ## Build
-Follow the stpes to build this project.
+
+Follow the steps to build this project firstly.
 
 Checkout the source codes.
 
@@ -26,7 +27,7 @@ mvn clean install
 
 Once the project is built and installed into your local Maven repository.
 
-Run the following command to generate a new Jakarat EE 9 project.
+Run the following command to generate a new Jakarat EE 9 project using the archetype.
 
 ```bash
 mvn archetype:generate
