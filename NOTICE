@@ -1,0 +1,9 @@
+Maven Archetype for JakartaEE 9
+Copyright 2021 Hantsy Bai <hantsy@gmail.com>
+
+JAVA is a trademark of Oracle America, Inc.
+
+This product includes 3rd-party software, including:
+* Apache Maven - The Apache Software Foundation (http://www.apache.org/).
+* Arquillian - Redhat and contributors (https://arquillian.org).
+* Glassfish - Eclipse Foundation(https://www.eclipse.org).
