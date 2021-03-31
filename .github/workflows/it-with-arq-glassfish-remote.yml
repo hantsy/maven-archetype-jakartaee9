@@ -56,3 +56,6 @@ jobs:
 
       - name: Run integration test
         run: mvn clean install -DskipTests=false
+      
+ #     - name: Deploy to Github Packages
+ #       run: mvn deploy -Darguments=-DaltDeploymentRepository=https://maven.pkg.github.com/hantsy/maven-archetype-jakartaee9 -Dtoken=${{secrets.GT_TOKEN }}
