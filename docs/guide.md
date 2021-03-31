@@ -1,8 +1,8 @@
 # Generate a Jakarta EE 9 project skeleton from Maven archetype
 
-I have created a [jakartaee9-starter-boilerplate](https://github.com/hantsy/jakartaee9-starter-boilerplate) repository for developers to building a Jakarta EE 9 project simply, you can read [some articles](https://hantsy.github.io/jakartaee9-starter-boilerplate/) I have written for the codes.
+I have created a [jakartaee9-starter-boilerplate](https://github.com/hantsy/jakartaee9-starter-boilerplate) repository for developers to building a Jakarta EE 9 project simply, you can read the [articles](https://hantsy.github.io/jakartaee9-starter-boilerplate/) I have written for the codes.
 
-I try to introduce this project in the official Jakarta EE  community mail list, and knew that [Eclipse EE4J starter](https://github.com/eclipse-ee4j/starter) project planned to restart the Jakarta EE  introduction work. I was suggested to create a Maven archetype in the starter project that it is easier to spread to the world. So I created [another Maven archetype for Jakarta EE 9 repository](https://github.com/hantsy/maven-archetype-jakartaee9) for this purpose. At the moment I wrote down this post, this maven archetype has been approved to upload to the Maven Central Repository and Github Packages registry.
+I shared this project in the official Jakarta EE  community mail list, and got that [Eclipse EE4J starter](https://github.com/eclipse-ee4j/starter) project was planned to provide a custom starter template for Jakarta EE 9. I was suggested to create a Maven archetype as a start point in the starter project. So I created [another Maven archetype for Jakarta EE 9 repository](https://github.com/hantsy/maven-archetype-jakartaee9) for this purpose. At the moment I wrote down this post, this maven archetype has been approved to upload to the Maven Central Repository and Github Packages registry.
 
 > The work of this maven archetype project is being ported to Eclipse EE4J Starter, see: [eclipse-ee4j/starter#63](https://github.com/eclipse-ee4j/starter/pull/63).
 
@@ -14,7 +14,7 @@ Make sure you have installed  the following software.
 * [Apache Maven 3.6](https://maven.apache.org)
 * [GlassFish v6.0](https://glassfish.org)
 
-> GlassFish v6.0 is still stick on Java 8, Java 11 is not supported now. GlassFish v6.1 will support Java 11, I will update it when Jakarta EE 9.1 is released.
+> Java 11 is becoming the mainstream version, but GlassFish v6.0 is still stick on Java 8, Java 11 support is planned in  the upcoming v6.1 and Jakarta EE 9.1. I will update it to Java 11 when Jakarta EE 9.1 is released.
 
 ## Generate project skeleton
 
@@ -33,7 +33,7 @@ Open your terminal, run the following command to generate a Jakarta EE 9 project
 
 Currently I only published the released version to  Maven Central repository. 
 
-To experience the Github Packages feature,  I deployed the `1.1-SNAPSHOT` version to Github Packages. If you want to use the latest version, add the following repositories config in your `~/.m2/settings.xml`. 
+To experience the Github Packages feature,  I also deployed the next `1.1-SNAPSHOT` version to Github Packages. If you want to use the latest version, add the following repositories config in your `~/.m2/settings.xml`. 
 
 ```xml
 <repositories>
@@ -50,7 +50,7 @@ Once the project is generated, switch to the project root.
 cd mypp
 ```
 
-If you import the codes into IDE, such as NetBeans, IntelliJ IDEA, etc. you will see the following project structure.
+Import the source codes into your IDEs, such as NetBeans, IntelliJ IDEA, etc. you will see the following project structure.
 
 ```bash
 ├── pom.xml
@@ -157,25 +157,25 @@ You can simply run the application using the following command.
 [INFO] Press Ctrl-C to stop the container...
 ```
 
-This command will perform a series of tasks for you.
+This command performs a series of tasks for you.
 
-1. Firstly it will clean and built the project into a war package.
+1. Firstly it cleans and builds the project into a war package.
 2. Then use cargo maven plugin to download a copy of Glassfish v6.0, and extract the files in the project build folder.
 3. Then create a new `cargo-dommain` for this project and start it immediately. 
 4. After the Glassfish is running, then deploy the packaged application to the Glassfish.
 
-> You can check the server.log file in *myqpp/target/glassfish6x-home/cargo-domain/logs* to view the details of server startup and application deployment.
+> You can check the *server.log* file in *myqpp/target/glassfish6x-home/cargo-domain/logs* to view the details of server startup and application deployment.
 
-Try to test the sample REST API endpoint.
+Open another terminal window,  try to test the sample REST API endpoint.
 
 ```bash
 > curl http://localhost:8080/myapp/api/greeting/JakartaEE
 {"message":"Say Hello to JakartaEE at 2021-03-31T16:32:39.216"}
 ```
 
-Compare to my [starter template project](https://github.com/hantsy/jakartaee9-starter-boilerplate), the maven archetype provides a quicker approach to experience the Jakarta EE 9 stack.
+Compare to my [jakartaee 9 starter template project](https://github.com/hantsy/jakartaee9-starter-boilerplate), the maven archetype provides a quicker approach to experience the Jakarta EE 9 stack.
 
-To stop the running application, send a `CTRL+C`  key shortcut in the terminal.
+To stop the running application, send a `CTRL+C` shortcut in the original terminal.
 
 ```bash
 [INFO] Press Ctrl-C to stop the container...
@@ -193,15 +193,13 @@ Terminate batch job (Y/N)? y
 
 ```
 
-
-
 ## Run Sample Tests
 
-The maven archetype project provides two simple JUnit/Arquilian test classes to demonstrate techniques for testing CDI bean and REST API.
+The generated project includes two simple JUnit/Arquilian test classes to demonstrate techniques of testing CDI bean and REST API.
 
 To run the sample testing codes. 
 
-1. Firstly make sure there is a running Glassfish server, check  [Testing Jakarta EE 9 with GalssFish 6](https://github.com/hantsy/jakartaee9-starter-boilerplate/blob/master/docs/arq-glassfish.md).
+1. Firstly make sure there is a running Glassfish server, check  [Testing Jakarta EE 9 Applications with GalssFish 6](https://github.com/hantsy/jakartaee9-starter-boilerplate/blob/master/docs/arq-glassfish.md).
 
 2. Then run the following command.
 
