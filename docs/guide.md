@@ -2,7 +2,7 @@
 
 I have created a [jakartaee9-starter-boilerplate](https://github.com/hantsy/jakartaee9-starter-boilerplate) repository for developers to building a Jakarta EE 9 project simply, you can read the [articles](https://hantsy.github.io/jakartaee9-starter-boilerplate/) I have written for the codes.
 
-I shared this project in the official Jakarta EE  community mail list, and got that [Eclipse EE4J starter](https://github.com/eclipse-ee4j/starter) project was planned to provide a custom starter template for Jakarta EE 9. I was suggested to create a Maven archetype as a start point in the starter project. So I created [another Maven archetype for Jakarta EE 9 repository](https://github.com/hantsy/maven-archetype-jakartaee9) for this purpose. At the moment I wrote down this post, this maven archetype has been approved to upload to the Maven Central Repository and Github Packages registry.
+I shared this project in the official Jakarta EE  community mail list, and got that [Eclipse EE4J starter](https://github.com/eclipse-ee4j/starter) project was planned to provide a custom starter template for Jakarta EE 9. I was suggested to create a Maven archetype as a start point in the starter project. So I created [another Maven archetype for Jakarta EE 9 repository](https://github.com/hantsy/maven-archetype-jakartaee9) for this purpose. At the moment I wrote down this post, this maven archetype has been approved to upload to the Maven Central Repository.
 
 > The work of this maven archetype project is being ported to Eclipse EE4J Starter, see: [eclipse-ee4j/starter#63](https://github.com/eclipse-ee4j/starter/pull/63).
 
@@ -33,7 +33,7 @@ Open your terminal, run the following command to generate a Jakarta EE 9 project
 
 Currently I only published the released version to  Maven Central repository. 
 
-To experience the Github Packages feature,  I also deployed the next `1.1-SNAPSHOT` version to Github Packages. If you want to use the latest version, add the following repositories config in your `~/.m2/settings.xml`. 
+To experience the Github Packages feature,  I also deployed the next `1.1-SNAPSHOT` version to Github Packages registry. If you want to use the latest version, add the following repositories config in your `~/.m2/settings.xml`. 
 
 ```xml
 <repositories>
