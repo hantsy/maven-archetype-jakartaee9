@@ -48,7 +48,7 @@ It will download a copy of Glassfish v6.0, and create a new domain for this proj
 Try to test the sample REST API endpoint.
 
 ```bash
-curl http://localhost:1080/api/greeting/JakartaEE
+curl http://localhost:8080/myapp/api/greeting/JakartaEE
 ```
 
 It is a quick way to experience the Jakarta EE 9 stack.
@@ -58,7 +58,7 @@ To run the sample testing codes.
 Firstly make sure there is a running Glassfish server. Then run the following command.
 
 ```bash
-mvn clean verify 
+mvn clean verify -DskipTests=false
 ```
 
 
