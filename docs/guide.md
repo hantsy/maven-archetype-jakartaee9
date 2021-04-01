@@ -2,7 +2,7 @@
 
 I have created a [jakartaee9-starter-boilerplate](https://github.com/hantsy/jakartaee9-starter-boilerplate) repository for developers to building a Jakarta EE 9 project simply, you can read the [articles](https://hantsy.github.io/jakartaee9-starter-boilerplate/) I have written for the codes.
 
-I shared this project in the official Jakarta EE  community mail list, and got that [Eclipse EE4J starter](https://github.com/eclipse-ee4j/starter) project was planned to provide a custom starter template for Jakarta EE 9. I was suggested to create a Maven archetype as a start point in the starter project. So I created [another Maven archetype for Jakarta EE 9 repository](https://github.com/hantsy/maven-archetype-jakartaee9) for this purpose. At the moment I wrote down this post, this maven archetype has been approved to upload to the Maven Central Repository.
+I shared this project in the official Jakarta EE  community mail list, and got that [Eclipse EE4J starter](https://github.com/eclipse-ee4j/starter) project has planned to provide a custom starter template for Jakarta EE 9. I was suggested to create a Maven archetype as a start point to share my work in the starter project. So I created [another Maven archetype for Jakarta EE 9 repository](https://github.com/hantsy/maven-archetype-jakartaee9) for this purpose. At the moment I wrote down this post, this maven archetype has been approved to upload to the Maven Central Repository.
 
 > The work of this maven archetype project is being ported to Eclipse EE4J Starter, see: [eclipse-ee4j/starter#63](https://github.com/eclipse-ee4j/starter/pull/63).
 
@@ -173,7 +173,7 @@ Open another terminal window,  try to test the sample REST API endpoint.
 {"message":"Say Hello to JakartaEE at 2021-03-31T16:32:39.216"}
 ```
 
-Compare to my [jakartaee 9 starter template project](https://github.com/hantsy/jakartaee9-starter-boilerplate), the maven archetype provides a quicker approach to experience the Jakarta EE 9 stack.
+Compare to my [jakartaee9-starter-boilerplate](https://github.com/hantsy/jakartaee9-starter-boilerplate)  project, the maven archetype provides a quicker approach to experience the Jakarta EE 9 stack.
 
 To stop the running application, send a `CTRL+C` shortcut in the original terminal.
 
