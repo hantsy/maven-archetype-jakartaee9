@@ -374,7 +374,7 @@ Once you have built the maven archetype project successfully, the next step is p
    ```bash
    refreshenv
    ```
-Then generate GPG keys.
+   Then generate GPG keys.
    
    ```bash
    # gpg --full-gen-key
@@ -441,7 +441,7 @@ Then generate GPG keys.
 
    > I skip the detailed steps here, please read the Synatype's [article](https://central.sonatype.org/pages/apache-maven.html) carefully.
 
-6. Then back to issue,  comment and notify the moderator to publish your artifact to the Maven Central repository. In one or two hours, your artifact will be available on [Maven Central Repository Search](https://search.maven.org/search?q=io.github.hantsy).
+6. Then back to the [issue#OSSRH-66424](https://issues.sonatype.org/browse/OSSRH-66424),  comment and notify the moderator to publish your artifact to the Maven Central repository. In one or two hours, your artifact will be available on [Maven Central Repository Search](https://search.maven.org/search?q=io.github.hantsy).
 
 ## Publishing to Github Package
 
@@ -488,4 +488,4 @@ The [Configuring Apache Maven for use with GitHub Packages](https://docs.github.
      ```
    * As you see, now you can add the above repository to your Maven proxy server or global Maven settings(*~/.m2/settings.xml*) in your system.
    
-     
+Check the [source codes from my Github](https://github.com/hantsy/maven-archetype-jakartaee9).     
