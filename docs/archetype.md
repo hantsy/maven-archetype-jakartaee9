@@ -349,7 +349,7 @@ To test the archetype resources, there is a *archetype.properties* and a *goal.t
 
 I created a [Github Actions workflow](https://github.com/hantsy/maven-archetype-jakartaee9/blob/master/.github/workflows/it-with-arq-glassfish-remote.yml) to verify the generated projects.
 
- ## Publishing to Maven Central Repository
+## Publishing to Maven Central Repository
 
 > Note, the steps of publishing your packages to the Maven Central repository is a little tedious, please be patient.
 
