@@ -1,8 +1,8 @@
 # Building your own Maven archetype
 
-Github is easy to share codes with others, for example I created [jakartaee9-starter-boilerplate](https://github.com/hantsy/jakartaee9-starter-boilerplate) as a project template for Jakarta EE developers. For those who are familiar with Github, it is easy to start their new projects by forking or cloning this project directly. But obviously there are some files used for this project itself and not required in your own projects. For most of Java developers esp. Maven users, a simple and clean Maven archetype is still the preferred option to generate the new project skeleton.
+Github is easy to share codes with others, for example I created [jakartaee9-starter-boilerplate](https://github.com/hantsy/jakartaee9-starter-boilerplate) as a project template for Jakarta EE developers. For those who are familiar with Github, it is easy to start their new projects by forking or cloning this project directly. But obviously for a general Jakarta EE application, you do not need the configuraitons of all application severs, eg. Glassfish/Payara, WildFly, OpenLiberty, Apache TomEE, etc. For most of Java developers esp. Maven users, a simple and clean Maven archetype is still the preferred option to generate the new project skeleton, and you can add the required configuration back later.
 
-I had created some archetype toys myself in the past years, but I never made them public through the Maven central repository. In this post, I will replay the steps of creating the [Maven Archetype for Jakarta EE 9](https://github.com/hantsy/maven-archetype-jakartaee9)  and the followed steps of  publishing it to the Maven Central repository and making it public to the world.
+I had created some maven archetype like toys myself in the past years, but I never made them public through the Maven Central repository. In this post, I will replay the steps of creating the [Maven Archetype for Jakarta EE 9](https://github.com/hantsy/maven-archetype-jakartaee9)  and the followed steps of  publishing it to the Maven Central repository and making it public to the world.
 
 ## Generating the archetype project skeleton
 
@@ -353,7 +353,7 @@ I created a [Github Actions workflow](https://github.com/hantsy/maven-archetype-
 
 > Note, the steps of publishing your packages to the Maven Central repository is a little tedious, please be patient.
 
-Once you have built the maven archetype project successfully, the next step is publishing it to Maven Central repository and make it public, there are some useful guides in Google results.
+Once you have built the maven archetype project successfully, the next step is publishing it to Maven Central repository and make it public, there are some useful guides in Google results. I suggest you pick one or more from the following list and read it firstly.
 
 * [Publish JAR To Central Maven Repository](http://tutorials.jenkov.com/maven/publish-to-central-maven-repository.html)
 * [How to Publish Your Artifacts to Maven Central](https://dzone.com/articles/publish-your-artifacts-to-maven-central)
@@ -361,7 +361,7 @@ Once you have built the maven archetype project successfully, the next step is p
 
 1. Register an account of the [Sonatype issue tracker](https://issues.sonatype.org).
 2. File a new issue on [Community Support](https://issues.sonatype.org/projects/OSSRH) to submit your request of publishing your artifact. Check [my issue#OSSRH-66424](https://issues.sonatype.org/browse/OSSRH-66424) I created for  [hantsy/maven-archetype-jakartaee9](https://github.com/hantsy/maven-archetype-jakartaee9) as an example. 
-3. Follow the response of the issue,  create a new empty repo(the name is the issue id) on Github  for authentication requirement. eg. [OSSRH-66424](https://github.com/hantsy/OSSRH-66424)
+3. Follow the response of the issue,  create a new empty repo(the name is the issue id) on Github for authentication requirement. eg. [OSSRH-66424](https://github.com/hantsy/OSSRH-66424)
 
 4. Generate GPG keys and send to key servers.
    Under Windows 10 system, you have to install GPG tools firstly. Simply run the following command to install gpg4win if you are using [Chocolatey](https://chocolatey.org/).
@@ -437,11 +437,11 @@ Once you have built the maven archetype project successfully, the next step is p
    gpg: sending key E5D9B4272348ADAE to hkps://hkps.pool.sks-keyservers.net
    ```
 
-5.  Follow the steps of  [Deploying to OSSRH with Apache Maven](https://central.sonatype.org/pages/apache-maven.html) to publish your artifact. 
+5.  Follow the steps of [Deploying to OSSRH with Apache Maven](https://central.sonatype.org/pages/apache-maven.html) to publish your artifact. 
 
    > I skip the detailed steps here, please read the Synatype's [article](https://central.sonatype.org/pages/apache-maven.html) carefully.
 
-6. Then back to the [issue#OSSRH-66424](https://issues.sonatype.org/browse/OSSRH-66424),  comment and notify the moderator to publish your artifact to the Maven Central repository. In one or two hours, your artifact will be available on [Maven Central Repository Search](https://search.maven.org/search?q=io.github.hantsy).
+6. Then back to the [issue#OSSRH-66424](https://issues.sonatype.org/browse/OSSRH-66424), comment and notify the moderator to publish your artifact to the Maven Central repository. In one or two hours, your artifact will be available on [Maven Central Repository Search index page](https://search.maven.org/search?q=io.github.hantsy).
 
 ## Publishing to Github Package
 
