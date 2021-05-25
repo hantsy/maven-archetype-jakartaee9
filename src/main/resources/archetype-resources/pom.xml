@@ -32,8 +32,7 @@ under the License.
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.release>11</maven.compiler.release>
 
     <!-- Official Maven Plugins -->
     <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
@@ -45,7 +44,7 @@ under the License.
 
     <!-- Cargo maven plugin -->
     <!-- Since 1.9.0, cargo-maven3-plugin is the default for cargo prefix. -->
-    <cargo-maven3-plugin.version>1.9.0</cargo-maven3-plugin.version>
+    <cargo-maven3-plugin.version>1.9.4</cargo-maven3-plugin.version>
 
     <!-- Jakarta EE API -->
     <jakartaee-api.version>9.1.0</jakartaee-api.version>
