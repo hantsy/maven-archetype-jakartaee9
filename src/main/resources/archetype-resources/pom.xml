@@ -27,7 +27,7 @@ under the License.
   <version>${version}</version>
   <packaging>war</packaging>
 
-  <name>${groupId}</name>
+  <name>${groupId}-${artifactId}</name>
   <description>A Jakarta EE starter boilerplate for Jakarta EE 9</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -48,16 +48,16 @@ under the License.
     <cargo-maven3-plugin.version>1.9.0</cargo-maven3-plugin.version>
 
     <!-- Jakarta EE API -->
-    <jakartaee-api.version>9.0.0</jakartaee-api.version>
+    <jakartaee-api.version>9.1.0</jakartaee-api.version>
 
     <!-- Arquillian BOM -->
     <arquillian-bom.version>1.7.0.Alpha9</arquillian-bom.version>
-    <junit-jupiter.version>5.7.1</junit-jupiter.version>
+    <junit-jupiter.version>5.7.2</junit-jupiter.version>
 
     <!-- Glassfish server -->
-    <glassfish.version>6.0.0</glassfish.version>
+    <glassfish.version>6.1.0</glassfish.version>
     <arquillian-glassfish6.version>1.0.0.Alpha1</arquillian-glassfish6.version>
-    <jersey.version>3.0.1</jersey.version>
+    <jersey.version>3.0.2</jersey.version>
 
     <!-- by default skip tests -->
     <skipTests>true</skipTests>
