@@ -4,6 +4,10 @@ This project provides a simple Maven archetype for generating a Jakarta EE 9 pro
 
 > The work of this project is being ported to Eclipse EE4J Starter, see: [eclipse-ee4j/starter#63](https://github.com/eclipse-ee4j/starter/pull/63).
 
+## Guide 
+
+[Generate a Jakarta EE 9 project skeleton from Maven archetype](https://itnext.io/generate-a-jakarta-ee-9-project-skeleton-from-maven-archetype-2b9fc9ce9bb8)
+
 ## Prerequisites
 
 * Java 8 +
